@@ -151,49 +151,49 @@ int main() {
     //Comparação entre o atributo: população
     if (populacao1 > populacao2)
     {
-        printf("População: Carta 1 venceu\n");
+        printf("População: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("População: Carta 2 venceu\n");
+        printf("População: Carta 2 (%s) venceu\n", nomeCidade2);
     }
     
     //Comparação entre o atributo: Área
     if (area1 > area2)
     {
-        printf("Área: Carta 1 venceu\n");
+        printf("Área: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("Área: Carta 2 venceu\n");
+        printf("Área: Carta 2 (%s) venceu\n", nomeCidade2);
     }
 
     //Comparação entre o atributo: PIB
     if (pib1 > pib2)
     {
-        printf("PIB: Carta 1 venceu\n");
+        printf("PIB: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("PIB: Carta 2 venceu\n");
+        printf("PIB: Carta 2 (%s) venceu\n", nomeCidade2);
     }
     
     //Comparação entre o atributo: Quantidade de pontos turísticos
     if (quantPontosTuristicos1 > quantPontosTuristicos2)
     {
-        printf("Quantidade de pontos turísticos: Carta 1 venceu\n");
+        printf("Quantidade de pontos turísticos: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("Quantidade de pontos turísticos: Carta 2 venceu\n");
+        printf("Quantidade de pontos turísticos: Carta 2 (%s) venceu\n", nomeCidade2);
     }
 
     //Comparação entre o atributo: Densidade populacional
     if (densidadePopulacional1 < densidadePopulacional2)
     {
-        printf("Densidade populacional: Carta 1 venceu\n");
+        printf("Densidade populacional: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("Densidade populacional: Carta 2 venceu\n");
+        printf("Densidade populacional: Carta 2 (%s) venceu\n", nomeCidade2);
     }
 
     //Comparação entre o atributo: Pip Per Capita
     if ( pibPerCapita1 > pibPerCapita2)
     {
-        printf("Pip Per Capita: Carta 1 venceu\n");
+        printf("Pip Per Capita: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("Pip Per Capita: Carta 2 venceu\n");
+        printf("Pip Per Capita: Carta 2 (%s) venceu\n", nomeCidade2);
     }
 
     //cálculo do superpoder - (população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder")
@@ -214,9 +214,9 @@ int main() {
     //Comparação entre o atributo: Super poder
     if (superPoder1 > superPoder2)
     {
-        printf("Super poder: Carta 1 venceu\n");
+        printf("Super poder: Carta 1 (%s) venceu\n", nomeCidade1);
     }else{
-        printf("Super poder: Carta 2 venceu\n");
+        printf("Super poder: Carta 2 (%s) venceu\n", nomeCidade2);
     }
 
     return 0;
