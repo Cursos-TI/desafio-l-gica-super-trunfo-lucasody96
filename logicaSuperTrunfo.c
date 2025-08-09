@@ -167,8 +167,8 @@ int main() {
     printf("6. PIB Per Capita\n");
     printf("7. Super Poder\n");
 
-    printf("Qual atributo que você deseja comparar as cartas? ");
-    scanf("%u", &escolhaJogador2);
+    printf("Qual o primeiro atributo que você deseja comparar as cartas? ");
+    scanf("%u", &escolhaJogador1);
     printf("\n");
     printf("==================================================\n");
 
@@ -209,7 +209,7 @@ int main() {
         printf("[7]. Super Poder\n");
     }
     
-    printf("Qual atributo que você deseja comparar as cartas? ");
+    printf("Qual o segundo atributo que você deseja comparar as cartas? ");
     scanf("%u", &escolhaJogador2);
     printf("\n");
 
