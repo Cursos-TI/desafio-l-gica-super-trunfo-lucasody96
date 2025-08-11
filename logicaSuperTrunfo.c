@@ -2,7 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
-// Desafio Super Trunfo - Estados
+// Desafio Super Trunfo - Cidades
 // Tema 2 - Comparação das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
 // Siga os comentários para implementar cada parte do desafio.
@@ -24,10 +24,10 @@ int main() {
     double somaAtributos1, somaAtributos2;
 
     printf("===========================================\n");
-    printf(" Bem vindo ao jogo Super Trunfo - Estados! \n");// Como foi solicitado variáveis referentes ao estado e não ao país, ajustei a introdução do desafio
+    printf(" Bem vindo ao jogo Super Trunfo - Cidades! \n");// Como foi solicitado variáveis referentes a cidade e não ao país, ajustei a introdução do desafio
     printf("===========================================\n");
     printf("\n"); //deixando um espaço para uma leitura mais fluída do usuário
-    printf("Para começarmos, vamos realizar o cadastro das cartas que mostrarão os dados dos estados\n");
+    printf("Para começarmos, vamos realizar o cadastro das cartas que mostrarão os dados das cidades\n");
     printf("\n");
 
     // Cadastro das Cartas:
@@ -295,8 +295,8 @@ int main() {
         break;
     case 3:
         printf ("O atributo 1 escolhido foi - PIB.\n");
-        printf ("%s: %.2f de reais.\n", nomeCidade1, pib1);
-        printf ("%s: %.2f de reais.\n", nomeCidade2, pib2);
+        printf ("%s: %.2f bilhões de reais.\n", nomeCidade1, pib1);
+        printf ("%s: %.2f bilhões de reais.\n", nomeCidade2, pib2);
 
         if (pib1 == pib2)
         {

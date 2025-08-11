@@ -1,74 +1,97 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+🏆 Super Trunfo: A Batalha das Cidades!
+Desafio Final: Comparação Avançada com Múltiplos Atributos em C
+Bem-vindo ao repositório do Super Trunfo! Este projeto é a culminação de um desafio de programação, onde aprimoramos o clássico jogo de cartas para uma experiência de linha de comando mais sofisticada e dinâmica. Nele, você pode registrar duas cartas de cidades e, em seguida, travar uma batalha épica usando uma lógica de comparação de múltiplos atributos.
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
+O objetivo do jogo é simples: criar duas cartas de cidades com seus respectivos dados e, em seguida, usar sua estratégia para escolher os atributos que levarão à vitória.
 
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
+✨ Funcionalidades Principais
+Este projeto foi construído para demonstrar o domínio de conceitos avançados em C, incluindo:
 
-## 🏅 Nível Novato
+Menus Dinâmicos e Interativos: A escolha do primeiro atributo de comparação afeta as opções disponíveis para a segunda escolha, garantindo uma experiência de usuário inteligente.
 
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
+Batalhas de Múltiplos Atributos: A vitória não se resume a um único ponto. O jogo compara as cartas com base em dois atributos diferentes, levando em conta regras específicas (como a densidade populacional, onde o menor valor vence).
 
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
+Super Poder Secreto: Um atributo especial é calculado com uma fórmula complexa, combinando vários dados para criar um valor único que pode virar o jogo!
 
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
+Pontuação Final Definidora: O vencedor final é determinado pela soma dos valores dos dois atributos escolhidos, adicionando uma camada extra de estratégia.
 
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
+Validação de Entrada: O programa lida com entradas inválidas do usuário de forma robusta, exibindo mensagens de erro claras e evitando falhas.
 
----
+🛠️ Como Compilar e Executar
+Para compilar e executar este projeto, você precisará de um compilador C, como o GCC.
 
-## 🏅 Nível Aventureiro
+Clone este repositório (se estiver no GitHub) ou salve o código em um arquivo chamado supertrunfo.c.
 
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
+Abra o terminal e navegue até a pasta onde o arquivo está salvo.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
+Compile o código com o seguinte comando:
 
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
+$ gcc -o supertrunfo supertrunfo.c
 
----
 
-## 🏅 Nível Mestre
+Execute o programa:
 
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
+$ ./supertrunfo
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
 
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
+🎮 Exemplo de Uso
+Ao executar o programa, você será guiado por um menu interativo. Primeiro, você registrará os dados das duas cartas:
 
----
+===========================================
+ Bem vindo ao jogo Super Trunfo - Estados! 
+===========================================
 
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
+Para começarmos, vamos realizar o cadastro das cartas que mostrarão os dados dos estados
 
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
+Primeiramente, vamos realizar o cadastro da primeira carta.
+Digite uma letra de A a H que representa um dos 8 estados: A
+Escreva a letra do estado seguida de um número de 01 a 04 (Exemplo: A01, B03): A01
+Digite o nome da cidade: São Paulo
+Informe o número de habitantes da cidade: 12396372
+...
 
----
 
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
+Após cadastrar as duas cartas, o menu de atributos será exibido para que você possa escolher qual deles comparar. Observe como a segunda escolha de atributos é dinâmica, excluindo a opção já selecionada:
 
-Equipe de Ensino - MateCheck
+*** Selecione o primeiro atributo a ser comparado informando uma das opções abaixo: ***
+[1]. População
+[2]. Área
+[3]. PIB
+[4]. Quantidade de Pontos Turísticos
+[5]. Densidade Populacional
+[6]. PIB Per Capita
+[7]. Super Poder
+Qual o primeiro atributo que você deseja comparar as cartas? 1
+
+*** Selecione o segundo atributo a ser comparado informando uma das opções abaixo: ***
+[2]. Área
+[3]. PIB
+[4]. Quantidade de Pontos Turísticos
+[5]. Densidade Populacional
+[6]. PIB Per Capita
+[7]. Super Poder
+Qual o segundo atributo que você deseja comparar as cartas? 3
+
+
+O jogo então exibirá os resultados da comparação, tanto individualmente quanto a soma total, revelando o vencedor!
+
+💻 Tecnologias
+Linguagem: C
+
+Bibliotecas:
+
+stdio.h
+
+string.h
+
+ctype.h
+
+🤝 Contato e Colaboração
+Se você tiver sugestões, quiser contribuir ou apenas entrar em contato, sinta-se à vontade! Você pode me encontrar em:
+
+[Seu nome/alias]: [Seu link de contato, ex: e-mail, perfil do LinkedIn, etc.]
+
+GitHub: [Link do seu perfil no GitHub]
+
+🙏 Créditos
+Este projeto foi desenvolvido como parte de um desafio de programação, com o objetivo de consolidar conceitos de lógica, estruturas de decisão e usabilidade em aplicações de linha de comando.
