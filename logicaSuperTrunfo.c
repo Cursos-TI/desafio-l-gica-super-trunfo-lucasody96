@@ -569,7 +569,7 @@ int main() {
     }
         
     printf("==================================================\n");
-    printf("\nObrigado por jogar Super Trunfo - Estados!\n");
+    printf("\nObrigado por jogar Super Trunfo - Cidades!\n");
     printf("==================================================\n");
     
     return 0;
