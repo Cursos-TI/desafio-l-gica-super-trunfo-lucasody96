@@ -9,7 +9,7 @@
 
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
-    unsigned int escolhaJogador1, escolhaJogador2;//Define a condição no switch
+    int escolhaJogador1, escolhaJogador2;//Define a condição no switch
     char estado1, estado2; //Definindo as váriaveis de estado.
     char codigoCarta1[4], codigoCarta2[4]; // Definindo as variáveis do código da carta
     char nomeCidade1[50], nomeCidade2[50]; //Definindo as varíaveis do nome da cidade
@@ -69,7 +69,7 @@ int main() {
       return 1; 
     }
 
-    printf("Informe o PIB (Produto Interno Bruto) da cidade: ");
+    printf("Informe o PIB (Produto Interno Bruto) da cidade (Em bilhões): ");
     scanf("%lf", &pib1);// Na leitura do PIB, se variável double.
 
     printf("Informe a quantidade de pontos turísticos da cidade: ");
@@ -111,7 +111,7 @@ int main() {
       return 1;
     }
 
-    printf("Informe o PIB (Produto Interno Bruto) da cidade: ");
+    printf("Informe o PIB (Produto Interno Bruto) da cidade (Em bilhões): ");
     scanf("%lf", &pib2);// Na leitura do PIB, se variável double
 
     printf("Informe a quantidade de pontos turísticos da cidade: ");
@@ -119,26 +119,25 @@ int main() {
     printf("\n");
     printf("==================================================\n");
 
-
     //Cálculo da Densidade populacional
     densidadePopulacional1 = (double)populacao1/area1;
     densidadePopulacional2 = (double)populacao2/area2;
 
     //Cálculo do Pib Per Capita
-    pibPerCapita1 = pib1/(double)populacao1;
-    pibPerCapita2 = pib2/(double)populacao2;
+    pibPerCapita1 = (pib1 * 1000000000.00)/(double)populacao1;
+    pibPerCapita2 = (pib2 * 1000000000.00)/(double)populacao2;
 
     //cálculo do superpoder - (população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder")
     superPoder1 = (double)populacao1 +
                   area1 +
-                  (double)pib1 +
+                  (pib1 * 1000000000.0) +
                   (double)quantPontosTuristicos1 +
                   pibPerCapita1 +
                   (1.0 / densidadePopulacional1);
 
     superPoder2 = (double)populacao2 +
                   area2 +
-                  (double)pib2 +
+                  (pib2 * 1000000000.0) +
                   (double)quantPontosTuristicos2 +
                   pibPerCapita2 +
                   (1.0 / densidadePopulacional2);
@@ -154,7 +153,7 @@ int main() {
     printf("Nome da cidade: %s\n", nomeCidade1);
     printf("População: %lu\n", populacao1);
     printf("Área: %.2f Km²\n", area1);
-    printf("PIB: %.2f de reais\n", pib1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Quantidade de pontos turísticos: %d\n", quantPontosTuristicos1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
@@ -188,7 +187,7 @@ int main() {
     printf("[7]. Super Poder\n");
 
     printf("Qual o primeiro atributo que você deseja comparar as cartas? ");
-    scanf("%u", &escolhaJogador1);
+    scanf("%d", &escolhaJogador1);
   
     if ((escolhaJogador1 < 1) || (escolhaJogador1 > 7))
     {
@@ -238,7 +237,7 @@ int main() {
     }
     
     printf("Qual o segundo atributo que você deseja comparar as cartas? ");
-    scanf("%u", &escolhaJogador2);
+    scanf("%d", &escolhaJogador2);
     printf("\n");
 
     if ((escolhaJogador2 < 1) || (escolhaJogador2 > 7))
