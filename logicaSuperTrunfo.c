@@ -18,9 +18,9 @@ int main() {
     double pib1, pib2;//Definindo as váriaveis do PIB.
     int quantPontosTuristicos1, quantPontosTuristicos2; //Definindo a quantidade de pontos turísticos.
     //Variáveis do desafio aventureiro
-    float densidadePopulacional1, densidadePopulacional2; //Definindo as variáveis de densidade populacional
-    float pibPerCapita1, pibPerCapita2;//Definindo as variáveis de PIB per Capita
-    float superPoder1, superPoder2;
+    double densidadePopulacional1, densidadePopulacional2; //Definindo as variáveis de densidade populacional
+    double pibPerCapita1, pibPerCapita2;//Definindo as variáveis de PIB per Capita
+    double superPoder1, superPoder2;
     double somaAtributos1, somaAtributos2;
 
     printf("===========================================\n");
@@ -73,7 +73,7 @@ int main() {
     scanf("%lf", &pib1);// Na leitura do PIB, se variável double.
 
     printf("Informe a quantidade de pontos turísticos da cidade: ");
-    scanf("%i", &quantPontosTuristicos1);
+    scanf("%d", &quantPontosTuristicos1);
     printf("\n");
     printf("==================================================\n");
 
@@ -115,7 +115,7 @@ int main() {
     scanf("%lf", &pib2);// Na leitura do PIB, se variável double
 
     printf("Informe a quantidade de pontos turísticos da cidade: ");
-    scanf("%i", &quantPontosTuristicos2);
+    scanf("%d", &quantPontosTuristicos2);
     printf("\n");
     printf("==================================================\n");
 
