@@ -10,7 +10,7 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     int escolhaJogador1, escolhaJogador2;//Define a condição no switch
-    char estado1, estado2; //Definindo as váriaveis de estado.
+    char cidade1, cidade2; //Definindo as váriaveis de estado.
     char codigoCarta1[4], codigoCarta2[4]; // Definindo as variáveis do código da carta
     char nomeCidade1[50], nomeCidade2[50]; //Definindo as varíaveis do nome da cidade
     unsigned long int populacao1, populacao2; //Definindo as váriaveis da população.
@@ -38,9 +38,9 @@ int main() {
     //Bloco de dados informados pelo usuário para a primeira carta
     printf("Primeiramente, vamos realizar o cadastro da primeira carta.\n");
 
-    printf("Digite uma letra de A a H que representa um dos 8 estados: ");
-    scanf(" %c", &estado1);
-    estado1 = toupper(estado1);
+    printf("Digite uma letra de A a H que representa uma das 8 cidades: ");
+    scanf(" %c", &cidade1);
+    cidade1 = toupper(cidade1);
 
     printf("Escreva a letra do estado seguida de um número de 01 a 04 (Exemplo: A01, B03): ");
     scanf("%3s", codigoCarta1);
@@ -81,8 +81,8 @@ int main() {
     printf("Agora, vamos realizar o cadastro da segunda carta.\n");
 
     printf("Digite uma letra de A a H que representa um dos 8 estados: ");
-    scanf(" %c", &estado2);
-    estado2 = toupper(estado2);
+    scanf(" %c", &cidade2);
+    cidade2 = toupper(cidade2);
 
     printf("Escreva a letra do estado seguida de um número de 01 a 04 (Exemplo: A01, B03): ");
     scanf("%3s", codigoCarta2);
@@ -148,7 +148,7 @@ int main() {
 
     //Impressão dos dados da carta 1
     printf("Carta 1: \n");
-    printf("Estado: %c\n", estado1);
+    printf("Cidade: %c\n", cidade1);
     printf("Código da carta: %s\n", codigoCarta1);
     printf("Nome da cidade: %s\n", nomeCidade1);
     printf("População: %lu\n", populacao1);
@@ -163,7 +163,7 @@ int main() {
 
     //Impressão dos dados da carta 2
     printf("Carta 2: \n");
-    printf("Estado: %c\n", estado2);
+    printf("Cidade: %c\n", cidade2);
     printf("Código da carta: %s\n", codigoCarta2);
     printf("Nome da cidade: %s\n", nomeCidade2);
     printf("População: %lu\n", populacao2);
